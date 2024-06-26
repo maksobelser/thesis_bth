@@ -4,7 +4,7 @@ This is the main code repository for my Mester's thesis for the study of Biotech
 
 The experimnet tries to establish if adding specific single-cell RNA-seq data to a cVAE model will improve the out-of-distribution (OOD) gene expression prediction. We use mouse and human type 2 diabetes and healthy data to compare different settings.
 
-![The design of the experiment](fig/experiment_design.jpeg)
+![The design of the experiment](fig/experiment_design.jpg)
 
 ### Dir structure
 
