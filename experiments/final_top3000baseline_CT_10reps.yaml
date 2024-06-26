@@ -1,0 +1,80 @@
+seml:
+  executable: final_top3000baseline_CT_10reps.py
+  name: FB3kHVG
+  output_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction_save/transVAE_experiment_logs/final_baseline3000hvg
+  project_root_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/
+
+slurm:
+  experiments_per_job: 2
+  max_simultaneous_jobs: 30
+  sbatch_options:
+    nodes: 1
+    ntasks-per-node: 1
+    gpus-per-task: 1
+    mem: 62G          
+    cpus-per-task: 12
+    time: 3-00:00
+    partition: gpu
+    exclude: gwn[01-08]
+
+###### BEGIN PARAMETER CONFIGURATION ######
+
+fixed:
+  max_epochs: 1500
+  dataset_to_predict: wang_to_predict_baseline3000hvg_CT.h5ad
+  dataset_ground_truth1: mSTZ_ground_truth_baseline3000hvg_CT.h5ad
+  dataset_ground_truth2: dbdb_ground_truth_baseline3000hvg_CT.h5ad
+  cov_embed_dims: 10
+  kl_weight: 0.005
+  save_folder_name: final_baseline3000hvg
+  save_models: True
+  learning_rate: 0.0001
+  n_latent: 512
+  n_hidden: 1000
+  dropout_rate: 0.3
+  weight_decay: 0.0001
+  
+grid:
+  addl_dataset_train:
+    type: choice
+    options:
+     - train_adata_baseline_3000hvg.h5ad
+     - embedding_top30_mouse_3000hvg.h5ad
+     - extra_human_neonatal_3000hvg.h5ad
+     - random_mouse_seed_42_3000hvg.h5ad
+     - extra_human_chem_3000hvg.h5ad
+     - embedding_top50_mouse_3000hvg.h5ad
+     - embedding_top70_human_3000hvg.h5ad
+     - extra_mouse_aged_3000hvg.h5ad
+     - embedding_top50_human_3000hvg.h5ad
+     - extra_mouse_T1D_3000hvg.h5ad
+     - extra_mouse_Embryonic_3000hvg.h5ad
+     - random_human_seed_43_3000hvg.h5ad
+     - embedding_top70_mouse_3000hvg.h5ad
+     - embedding_top100_mouse_3000hvg.h5ad
+     - embedding_top30_human_3000hvg.h5ad
+     - random_human_seed_42_3000hvg.h5ad
+     - extra_human_preT2D_3000hvg.h5ad
+     - extra_mouse_chem_3000hvg.h5ad
+     - random_mouse_seed_43_3000hvg.h5ad
+     - extra_mouse_young_3000hvg.h5ad
+    
+  n_layers:
+    type: range
+    min: 6
+    max: 10
+    step: 2
+    
+  seed:
+    type: choice
+    options:
+     - 42
+     - 43
+     - 44
+     - 45
+     - 46
+     - 47
+     - 48
+     - 49
+     - 50
+     - 51

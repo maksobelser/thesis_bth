@@ -1,0 +1,46 @@
+seml:
+  executable: final_full_CT_10reps_big_dataset_rerun.py
+  name: test2
+  output_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction_save/transVAE_experiment_logs/full_genes_w_and_wo_cell_types_with_combination_and_seperate_10_reps_no_save
+  project_root_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/
+
+slurm:
+  experiments_per_job: 1
+  max_simultaneous_jobs: 30
+  sbatch_options:
+    nodes: 1
+    ntasks-per-node: 1
+    gpus-per-task: 1
+    mem: 62G          
+    cpus-per-task: 12
+    time: 3-00:00
+    partition: gpu
+    exclude: gwn[01-08]
+
+###### BEGIN PARAMETER CONFIGURATION ######
+
+fixed:
+  max_epochs: 1
+  dataset_to_predict: wang_to_predict_cleanCT.h5ad
+  dataset_ground_truth1: dbdb_ground_truth_cleanCT.h5ad
+  dataset_ground_truth2: mSTZ_ground_truth_cleanCT.h5ad
+  cov_embed_dims: 10
+  kl_weight: 0.005
+  save_folder_name: final_full_CT_10reps
+  save_models: False
+  learning_rate: 0.0001
+  n_latent: 512
+  n_hidden: 1000
+  dropout_rate: 0.0001
+  weight_decay: 0.3
+  n_layers: 8
+  shared_top: 4000
+  seed: 42
+
+grid:
+  addl_dataset_train:
+    type: choice
+    options:
+     - train_adata_baseline.h5ad
+     - embedding_top30_mouse.h5ad
+     - combination

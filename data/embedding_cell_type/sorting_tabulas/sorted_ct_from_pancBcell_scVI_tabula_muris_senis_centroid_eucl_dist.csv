@@ -1,0 +1,152 @@
+cell_type,distance
+type B pancreatic cell,0.0
+pancreatic D cell,5.012228012084961
+pancreatic A cell,5.275809288024902
+pancreatic PP cell,5.4298624992370605
+granulocyte,6.36695671081543
+granulocytopoietic cell,6.377202033996582
+lymphocyte,6.532304763793945
+plasma cell,6.537424087524414
+immature B cell,6.597546100616455
+B cell,6.618248462677002
+proerythroblast,6.666766166687012
+late pro-B cell,6.704193592071533
+microglial cell,6.800009250640869
+mesenchymal stem cell,6.892010688781738
+naive B cell,6.90360164642334
+kidney distal convoluted tubule epithelial cell,6.904022216796875
+professional antigen presenting cell,6.919071197509766
+fibroblast,6.968481540679932
+fibroblast of cardiac tissue,6.971283912658691
+mesenchymal cell,7.000847816467285
+leukocyte,7.038520336151123
+macrophage,7.0385637283325195
+adventitial cell,7.041870594024658
+epithelial cell,7.042444229125977
+large intestine goblet cell,7.112029075622559
+megakaryocyte-erythroid progenitor cell,7.1136698722839355
+bladder cell,7.1974334716796875
+keratinocyte,7.221877574920654
+precursor B cell,7.227867603302002
+epithelial cell of thymus,7.270009994506836
+basal cell of epidermis,7.292776584625244
+bladder urothelial cell,7.293653964996338
+kidney proximal convoluted tubule epithelial cell,7.307573318481445
+chondrocyte,7.322401523590088
+T cell,7.322633743286133
+smooth muscle cell of trachea,7.3896613121032715
+hepatocyte,7.401150703430176
+DN4 thymocyte,7.404659748077393
+mesenchymal stem cell of adipose tissue,7.412977695465088
+hematopoietic precursor cell,7.431178569793701
+myeloid cell,7.437350273132324
+lung neuroendocrine cell,7.441598892211914
+"CD4-positive, alpha-beta T cell",7.475160121917725
+kidney proximal straight tubule epithelial cell,7.525240421295166
+epidermal cell,7.526197910308838
+stromal cell,7.528863430023193
+monocyte,7.542883396148682
+endothelial cell,7.5522308349609375
+double negative thymocyte,7.569881916046143
+naive T cell,7.587448596954346
+pancreatic acinar cell,7.607943058013916
+regulatory T cell,7.615199089050293
+mature NK T cell,7.658126354217529
+blood cell,7.674717426300049
+immature NK T cell,7.685600280761719
+fibroblast of lung,7.690305233001709
+thymocyte,7.691934108734131
+regular atrial cardiac myocyte,7.710143566131592
+mature alpha-beta T cell,7.713373184204102
+basal cell,7.713620662689209
+pancreatic stellate cell,7.723406791687012
+bronchial smooth muscle cell,7.737138748168945
+myeloid leukocyte,7.738210678100586
+kidney collecting duct principal cell,7.766292572021484
+promonocyte,7.769722938537598
+erythroblast,7.774783611297607
+neutrophil,7.776294231414795
+luminal epithelial cell of mammary gland,7.784401893615723
+immature T cell,7.799578666687012
+enteroendocrine cell,7.842667102813721
+myeloid dendritic cell,7.850083827972412
+classical monocyte,7.85892915725708
+keratinocyte stem cell,7.872790336608887
+neuroendocrine cell,7.880789279937744
+Kupffer cell,7.881967544555664
+kidney loop of Henle thick ascending limb epithelial cell,7.895288467407227
+pulmonary interstitial fibroblast,7.914694309234619
+endothelial cell of coronary artery,7.92501974105835
+"CD8-positive, alpha-beta T cell",7.930338382720947
+mesangial cell,7.949769973754883
+alveolar macrophage,7.968891143798828
+secretory cell,7.9797210693359375
+skeletal muscle satellite cell,7.99330997467041
+smooth muscle cell,8.01047134399414
+plasmacytoid dendritic cell,8.015142440795898
+endothelial cell of hepatic sinusoid,8.026884078979492
+macrophage dendritic cell progenitor,8.032698631286621
+lung macrophage,8.045204162597656
+hematopoietic stem cell,8.070345878601074
+vein endothelial cell,8.078078269958496
+natural killer cell,8.079239845275879
+neuron,8.106620788574219
+oligodendrocyte,8.128060340881348
+mast cell,8.134888648986816
+intermediate monocyte,8.147774696350098
+enterocyte of epithelium of large intestine,8.174769401550293
+aortic endothelial cell,8.20182991027832
+stem cell of epidermis,8.23193645477295
+cardiac neuron,8.250946998596191
+epithelial cell of proximal tubule,8.282110214233398
+epithelial cell of large intestine,8.320413589477539
+endocardial cell,8.331159591674805
+basophil,8.332718849182129
+erythrocyte,8.37391185760498
+smooth muscle cell of the pulmonary artery,8.427489280700684
+intestinal crypt stem cell,8.433181762695312
+kidney capillary endothelial cell,8.47004222869873
+club cell,8.500555992126465
+duct epithelial cell,8.512510299682617
+fenestrated cell,8.550812721252441
+plasmatocyte,8.571483612060547
+basal epithelial cell of tracheobronchial tree,8.61169147491455
+cardiac muscle cell,8.644774436950684
+DN3 thymocyte,8.661190032958984
+hepatic stellate cell,8.715924263000488
+Langerhans cell,8.793621063232422
+kidney collecting duct epithelial cell,8.809063911437988
+kidney loop of Henle ascending limb epithelial cell,8.827608108520508
+fibrocyte,8.848846435546875
+non-classical monocyte,8.86648178100586
+granulocyte monocyte progenitor cell,8.873648643493652
+brain pericyte,8.88413143157959
+brush cell,8.893149375915527
+astrocyte,8.900870323181152
+kidney cortex artery cell,8.948995590209961
+Schwann cell,8.949321746826172
+neural stem cell,8.962912559509277
+pancreatic ductal cell,8.98878288269043
+"erythroid progenitor cell, mammalian",9.048917770385742
+dendritic cell,9.105731964111328
+oligodendrocyte precursor cell,9.166481018066406
+cardiac valve cell,9.211187362670898
+kidney cell,9.212301254272461
+neuroepithelial stem cell,9.260019302368164
+early pro-B cell,9.465270042419434
+type II pneumocyte,9.725899696350098
+endothelial cell of lymphatic vessel,9.88919734954834
+cell of skeletal muscle,10.330455780029297
+respiratory basal cell,10.343694686889648
+type I pneumocyte,10.369166374206543
+pericyte,10.561349868774414
+mucus secreting cell,10.646323204040527
+ciliated columnar cell of tracheobronchial tree,10.651677131652832
+Bergmann glial cell,10.682933807373047
+interneuron,10.748764038085938
+brush cell of epithelium proper of large intestine,10.851040840148926
+regular ventricular cardiac myocyte,10.865038871765137
+ependymal cell,11.016500473022461
+medium spiny neuron,11.828109741210938
+kidney interstitial fibroblast,13.21823787689209
+lymphoid lineage restricted progenitor cell,14.326742172241211

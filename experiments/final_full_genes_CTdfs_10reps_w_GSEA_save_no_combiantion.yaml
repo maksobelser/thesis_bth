@@ -1,0 +1,78 @@
+seml:
+  executable: final_full_genes_CTdfs_10reps_w_GSEA_save_no_combiantion.py
+  name: gsea_save_rerun
+  output_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction_save/transVAE_experiment_logs/final_full_GSEA_save
+  project_root_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/
+
+slurm:
+  experiments_per_job: 2
+  max_simultaneous_jobs: 30
+  sbatch_options:
+    nodes: 1
+    ntasks-per-node: 1
+    gpus-per-task: 1
+    mem: 64G
+    cpus-per-task: 12
+    time: 3-00:00
+    partition: gpu
+    exclude: gwn[01-08]
+
+###### BEGIN PARAMETER CONFIGURATION ######
+
+fixed:
+  max_epochs: 1500
+  dataset_to_predict: wang_to_predict_cleanCT.h5ad
+  dataset_ground_truth1: dbdb_ground_truth_cleanCT.h5ad
+  dataset_ground_truth2: mSTZ_ground_truth_cleanCT.h5ad
+  cov_embed_dims: 10
+  kl_weight: 0.005
+  save_folder_name: final_full_CT_10reps
+  save_models: True
+  learning_rate: 0.0001
+  n_latent: 512
+  n_hidden: 1000
+  dropout_rate: 0.0001
+  weight_decay: 0.3
+  n_layers: 8
+  shared_top: 4000
+  embed_ct: False
+
+grid:
+  seed:
+    type: choice
+    options:
+     - 42
+     - 43
+     - 44
+     - 45
+     - 46
+     - 47
+     - 48
+     - 49
+     - 50
+     - 51
+
+  addl_dataset_train:
+    type: choice
+    options:
+     - train_adata_baseline.h5ad
+     - embedding_top30_mouse.h5ad
+     - extra_human_neonatal.h5ad
+     - random_mouse_seed_42.h5ad
+     - extra_human_chem.h5ad
+     - embedding_top50_mouse.h5ad
+     - embedding_top70_human.h5ad
+     - extra_mouse_aged.h5ad
+     - embedding_top50_human.h5ad
+     - extra_mouse_T1D.h5ad
+     - extra_mouse_Embryonic.h5ad
+     - random_human_seed_43.h5ad
+     - embedding_top70_mouse.h5ad
+     - embedding_top100_mouse.h5ad
+     - embedding_top30_human.h5ad
+     - random_human_seed_42.h5ad
+     - extra_human_preT2D.h5ad
+     - extra_mouse_chem.h5ad
+     - random_mouse_seed_43.h5ad
+     - extra_mouse_young.h5ad
+

@@ -1,0 +1,51 @@
+seml:
+  executable: final_full_CT_10reps_big_dataset.py
+  name: big_dataset_full_genes
+  output_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction_save/transVAE_experiment_logs/big_dataset_train_full_CT_10reps
+  project_root_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/
+
+slurm:
+  experiments_per_job: 2
+  max_simultaneous_jobs: 30
+  sbatch_options:
+    nodes: 1
+    ntasks-per-node: 1
+    gpus-per-task: 1
+    mem: 62G          
+    cpus-per-task: 12
+    time: 3-00:00
+    partition: gpu
+    exclude: gwn[01-08]
+
+###### BEGIN PARAMETER CONFIGURATION ######
+
+fixed:
+  max_epochs: 1500
+  dataset_to_predict: wang_to_predict_cleanCT.h5ad
+  dataset_ground_truth1: dbdb_ground_truth_cleanCT.h5ad
+  dataset_ground_truth2: mSTZ_ground_truth_cleanCT.h5ad
+  cov_embed_dims: 10
+  kl_weight: 0.005
+  save_folder_name: final_full_CT_10reps
+  save_models: True
+  learning_rate: 0.0001
+  n_latent: 512
+  n_hidden: 1000
+  dropout_rate: 0.0001
+  weight_decay: 0.3
+  n_layers: 8
+
+grid:
+  seed:
+    type: choice
+    options:
+     - 42
+     - 43
+     - 44
+     - 45
+     - 46
+     - 47
+     - 48
+     - 49
+     - 50
+     - 51

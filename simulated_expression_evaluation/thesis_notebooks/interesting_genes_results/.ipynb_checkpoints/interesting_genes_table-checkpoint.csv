@@ -1,0 +1,8 @@
+,Gene name,Gene stable ID,Gene description,is_gene_in_experiment
+2,Gipr,ENSMUSG00000030406,gastric inhibitory polypeptide receptor [Source:MGI Symbol;Acc:MGI:1352753],True
+4,Slc30a8,ENSMUSG00000022315,"solute carrier family 30 (zinc transporter), member 8 [Source:MGI Symbol;Acc:MGI:2442682]",True
+9,Slc2a2,ENSMUSG00000027690,"solute carrier family 2 (facilitated glucose transporter), member 2 [Source:MGI Symbol;Acc:MGI:1095438]",True
+10,Abcc8,ENSMUSG00000040136,"ATP-binding cassette, sub-family C (CFTR/MRP), member 8 [Source:MGI Symbol;Acc:MGI:1352629]",True
+15,Neurod1,ENSMUSG00000034701,neurogenic differentiation 1 [Source:MGI Symbol;Acc:MGI:1339708],True
+16,Glp1r,ENSMUSG00000024027,glucagon-like peptide 1 receptor [Source:MGI Symbol;Acc:MGI:99571],True
+20,Trpm5,ENSMUSG00000009246,"transient receptor potential cation channel, subfamily M, member 5 [Source:MGI Symbol;Acc:MGI:1861718]",True

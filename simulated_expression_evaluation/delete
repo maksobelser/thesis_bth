@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/notebooks/make_re_eval_161123.py", line 187, in <module>
+    print(f"Processing {index + 1}/{total_configs}: {config}")
+NameError: name 'total_configs' is not defined

@@ -1,0 +1,14 @@
+#!/bin/bash
+### define resources needed:
+#SBATCH --job-name=GSEA
+#SBATCH --output=GSEA_ct.out
+#SBATCH --time=12:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --partition=gpu
+#SBATCH --gpus-per-task=1
+#SBATCH --cpus-per-task=64
+#SBATCH --mem=120GB
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate msc1
+python perform_GSEA.py

@@ -1,0 +1,58 @@
+seml:
+  executable: final_full_CT_10reps_big_dataset_rerun_resolving_memory_issues.py
+  name: bd_ct_save
+  output_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction_save/transVAE_experiment_logs/resoving_memory_issues_w_big_dataset
+  project_root_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/
+
+slurm:
+  experiments_per_job: 1
+  max_simultaneous_jobs: 20
+  sbatch_options:
+    nodes: 1
+    ntasks-per-node: 1
+    gpus-per-task: 1
+    mem: 100G
+    cpus-per-task: 12
+    time: 3-00:00
+    partition: gpu
+    exclude: gwn[01-08]
+
+###### BEGIN PARAMETER CONFIGURATION ######
+
+fixed:
+  max_epochs: 1500
+  dataset_to_predict: wang_to_predict_cleanCT.h5ad
+  dataset_ground_truth1: dbdb_ground_truth_cleanCT.h5ad
+  dataset_ground_truth2: mSTZ_ground_truth_cleanCT.h5ad
+  cov_embed_dims: 10
+  kl_weight: 0.005
+  save_folder_name: full_genes_big_data_w_and_wo_ct_encoding_10_reps
+  save_models: True
+  learning_rate: 0.0001
+  n_latent: 512
+  n_hidden: 1000
+  dropout_rate: 0.0001
+  weight_decay: 0.3
+  n_layers: 8
+  shared_top: 4000
+  addl_dataset_train: combination
+
+grid:
+  embed_ct:
+    type: choice
+    options:
+     - True
+     - False
+  seed:
+    type: choice
+    options:
+     - 42
+     - 43
+     - 44
+     - 45
+     - 46
+     - 47
+     - 48
+     - 49
+     - 50
+     - 51

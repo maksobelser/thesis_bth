@@ -1,0 +1,83 @@
+seml:
+  executable: experiment251023.py
+  name: all_ds
+  output_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/logs_251023
+  project_root_dir: /d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/
+
+slurm:
+  experiments_per_job: 4
+  max_simultaneous_jobs: 30
+  sbatch_options:
+    nodes: 1
+    ntasks-per-node: 1
+    gpus-per-task: 1
+    mem: 62G          
+    cpus-per-task: 12
+    time: 3-00:00
+    partition: gpu
+
+###### BEGIN PARAMETER CONFIGURATION ######
+
+fixed:
+  max_epochs: 1000
+  dataset_to_predict: wang_to_predict_3000hvg.h5ad
+  dataset_ground_truth1: dbdb_ground_truth_3000hvg.h5ad
+  dataset_ground_truth2: mSTZ_ground_truth_3000hvg.h5ad
+  cov_embed_dims: 10
+  kl_weight: 0.005
+  save_folder_name: all_ds_save
+  save_models: False
+  learning_rate: 0.0001
+  n_latent: 512
+  n_hidden: 1000
+  
+
+grid:
+  addl_dataset_train:
+    type: choice
+    options:
+     - train_adata_baseline_3000hvg.h5ad
+     - embedding_top30_mouse_3000hvg.h5ad
+     - extra_human_neonatal_3000hvg.h5ad
+     - random_mouse_seed_42_3000hvg.h5ad
+     - extra_human_chem_3000hvg.h5ad
+     - embedding_top50_mouse_3000hvg.h5ad
+     - embedding_top70_human_3000hvg.h5ad
+     - extra_mouse_aged_3000hvg.h5ad
+     - embedding_top50_human_3000hvg.h5ad
+     - extra_mouse_T1D_3000hvg.h5ad
+     - extra_mouse_Embryonic_3000hvg.h5ad
+     - random_human_seed_43_3000hvg.h5ad
+     - embedding_top70_mouse_3000hvg.h5ad
+     - embedding_top100_mouse_3000hvg.h5ad
+     - embedding_top30_human_3000hvg.h5ad
+     - random_human_seed_42_3000hvg.h5ad
+     - extra_human_preT2D_3000hvg.h5ad
+     - extra_mouse_chem_3000hvg.h5ad
+     - random_mouse_seed_43_3000hvg.h5ad
+     - extra_mouse_young_3000hvg.h5ad
+    
+  n_layers:
+    type: range
+    min: 4
+    max: 7
+    step: 2
+    
+  dropout_rate:
+    type: choice
+    options:
+     - 0.2
+     - 0.3
+
+  weight_decay:
+    type: choice
+    options:
+     - 0.000001
+     - 0.0001
+    
+  seed:
+    type: choice
+    options:
+     - 42
+     - 43
+     - 44

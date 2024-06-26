@@ -1,0 +1,14 @@
+#!/bin/bash
+### define resources needed:
+#SBATCH --job-name=re_eval
+#SBATCH --output=/d/hpc/projects/FRI/DL/mo6643/MSC/cross_species_prediction/transVAE_seml/notebooks/re_eval161123.out
+#SBATCH --time=12:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --partition=gpu
+#SBATCH --cpus-per-task=64
+#SBATCH --gpus-per-task=1
+#SBATCH --mem-per-gpu=100GB
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate msc1
+python make_re_eval_161123.py

@@ -1,0 +1,21 @@
+,Ensembl Gene ID,Gene Biotype,External Gene Name,Description
+0,ENSMUSG00000001827,protein_coding,Folr1,folate receptor 1 (adult) [Source:MGI Symbol;Acc:MGI:95568]
+1,ENSMUSG00000004366,protein_coding,Sst,somatostatin [Source:MGI Symbol;Acc:MGI:98326]
+2,ENSMUSG00000006360,protein_coding,Crip1,cysteine-rich protein 1 (intestinal) [Source:MGI Symbol;Acc:MGI:88501]
+3,ENSMUSG00000017311,protein_coding,Pyy,peptide YY [Source:MGI Symbol;Acc:MGI:99924]
+4,ENSMUSG00000017316,protein_coding,Ppy,pancreatic polypeptide [Source:MGI Symbol;Acc:MGI:97753]
+5,ENSMUSG00000018339,protein_coding,Gpx3,glutathione peroxidase 3 [Source:MGI Symbol;Acc:MGI:105102]
+6,ENSMUSG00000019987,protein_coding,Arg1,"arginase, liver [Source:MGI Symbol;Acc:MGI:88070]"
+7,ENSMUSG00000022490,protein_coding,Ppp1r1a,"protein phosphatase 1, regulatory inhibitor subunit 1A [Source:MGI Symbol;Acc:MGI:1889595]"
+8,ENSMUSG00000024225,protein_coding,Clps,"colipase, pancreatic [Source:MGI Symbol;Acc:MGI:88421]"
+9,ENSMUSG00000024990,protein_coding,Rbp4,"retinol binding protein 4, plasma [Source:MGI Symbol;Acc:MGI:97879]"
+10,ENSMUSG00000026818,protein_coding,Cel,carboxyl ester lipase [Source:MGI Symbol;Acc:MGI:88374]
+11,ENSMUSG00000028234,protein_coding,Rps20,ribosomal protein S20 [Source:MGI Symbol;Acc:MGI:1914677]
+12,ENSMUSG00000029522,protein_coding,Pla2g1b,"phospholipase A2, group IB, pancreas [Source:MGI Symbol;Acc:MGI:101842]"
+13,ENSMUSG00000029673,protein_coding,Auts2,autism susceptibility candidate 2 [Source:MGI Symbol;Acc:MGI:1919847]
+14,ENSMUSG00000030954,protein_coding,Gp2,glycoprotein 2 (zymogen granule membrane) [Source:MGI Symbol;Acc:MGI:1914383]
+15,ENSMUSG00000033061,protein_coding,Resp18,regulated endocrine-specific protein 18 [Source:MGI Symbol;Acc:MGI:1098222]
+16,ENSMUSG00000046008,protein_coding,Pnlip,pancreatic lipase [Source:MGI Symbol;Acc:MGI:97722]
+17,ENSMUSG00000054446,protein_coding,Cpa1,"carboxypeptidase A1, pancreatic [Source:MGI Symbol;Acc:MGI:88478]"
+18,ENSMUSG00000071415,protein_coding,Rpl23,ribosomal protein L23 [Source:MGI Symbol;Acc:MGI:1929455]
+19,ENSMUSG00000071553,protein_coding,Cpa2,"carboxypeptidase A2, pancreatic [Source:MGI Symbol;Acc:MGI:3617840]"
